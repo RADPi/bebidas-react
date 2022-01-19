@@ -1,5 +1,5 @@
 import React from 'react'
-import { useContext, useState } from 'react/cjs/react.development'
+import { useContext, useState } from 'react'
 import { ModalContext } from '../context/Modal.Context'
 import Modal from '@material-ui/core/Modal'
 import { makeStyles } from '@material-ui/core/styles'
@@ -32,11 +32,11 @@ const Receta = ({ receta }) => {
 
 	const classes = useStyles()
 
-	function handleOpen() {
+	const handleOpen = () => {
 		setOpen(true)
 	}
 
-	function handleClose() {
+	const handleClose = () => {
 		setOpen(false)
 	}
 

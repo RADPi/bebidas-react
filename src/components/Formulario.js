@@ -11,7 +11,7 @@ const Formulario = () => {
 
 	const { buscarRecetas, setConsultar } = useContext(RecetasContext)
 
-	function obtenerDatosReceta(e) {
+	const obtenerDatosReceta = e => {
 		setBusqueda({
 			...busqueda,
 			[e.target.name]: e.target.value,
