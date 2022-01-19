@@ -1,13 +1,9 @@
-import PropTypes from 'prop-types'
-
-const Header = props => {
+const Header = () => {
 	return (
 		<header className='bg-alert'>
 			<h1>Busca Recetas de Bebidas</h1>
 		</header>
 	)
 }
-
-Header.propTypes = {}
 
 export default Header
