@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const ModalContext = createContext()
 
-const ModalProvider = props => {
+export default function ModalProvider(props) {
 	const [idReceta, setIdReceta] = useState(null)
 	const [informacion, setInformacion] = useState({})
 
@@ -31,5 +31,3 @@ const ModalProvider = props => {
 		</ModalContext.Provider>
 	)
 }
-
-export default ModalProvider

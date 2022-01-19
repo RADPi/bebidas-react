@@ -6,7 +6,7 @@ export const CategoriasContext = createContext()
 
 // Provider es donbe se ecuentran las funciones y state
 
-const CategoriasProvider = props => {
+export default function CategoriasProvider(props) {
 	// crear el state del Context
 
 	const [categorias, setCategorias] = useState([])
@@ -26,5 +26,3 @@ const CategoriasProvider = props => {
 		</CategoriasContext.Provider>
 	)
 }
-
-export default CategoriasProvider
