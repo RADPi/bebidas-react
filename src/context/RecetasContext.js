@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from 'react'
 
 export const RecetasContext = createContext()
 
-export default function RecetasProvider(props) {
+const RecetasProvider = props => {
 	const [recetas, setRecetas] = useState([])
 	const [busqueda, buscarRecetas] = useState({
 		nombre: '',
@@ -34,3 +34,5 @@ export default function RecetasProvider(props) {
 		</RecetasContext.Provider>
 	)
 }
+
+export default RecetasProvider
